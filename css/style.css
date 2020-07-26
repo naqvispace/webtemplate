@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.nav{
+	width: 100%;
+	height: 60px;
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+}
+.nav-bar{
+	padding-right: 15px;
+}
+.brand{
+	padding-left: 15px;
+}
+.dropbtn {
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 2px; 
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.head-content{
+	height:500px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/about-meeting.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	 
+}
+
+.head-para{
+	
+	color: #fff;
+}
+.head-para p{
+	font-size: 20px;
+}
+
+.cont-us{
+	margin:30px 30px 30px 30px;
+	display: inline-block;
+}
+
+.cont-us label{
+float: left;
+margin:5px 5px 5px 5px;
+width: 100%;
+
+}
+
+.cont-us input{
+margin:5px 0 15px 0;
+border:1px solid #000;
+box-shadow: 1px 1px inset;
+float: left;
+width: 95%;
+	
+}
+.cont-us input[type="email"]{
+	
+}
+.cont-us textarea{
+	width: 95%;
+	height:150px;
+	margin:5px 0 5px 0;
+	box-shadow: 1px 1px inset;
+	float: left;
+}
+input[type="submit"]{
+	width: 30%;
+	height: 40px;
+	margin:5px 0 5px 0;
+	background-color: #d3d3d3;
+	
+
+}
+.cont-addr{
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	font-family: monospace;
+}
+.carousel{
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.carousel-caption{
+	position: relative;
+}
+.carousel-item {
+	text-align: center;
+	
+}
+.carousel-caption .pro-desc{
+	color: #000;
+	position: absolute;
+	top: -190px;
+	left: 70px;
+	line-height: 1;
+
+}
+.carousel-caption img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border:2px solid #fff; 
+	position: absolute;
+	top: -190px;
+	left: 10px;
+}
+.carousel-caption p{
+	position: absolute;
+	color: #a9a9a9;
+	top: -130px;
+	right: 20px;
+}
+.in-touch{
+	width: 100%;
+	height: 200px;
+	background-color: #ffa500;
+	color: #fff;
+	text-align: center;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.in-touch p{
+	width: 80%;
+	margin:0 auto;
+	font-family: monospace;
+
+}
+.get-touch{
+	width: 180px;
+	height: 40px;
+	border: 1px solid #fff;
+	padding-top: 10px;
+	padding-left: 10PX;
+	box-sizing: border-box;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 10px;
+
+}
+.footer{
+	width: 100%;
+	padding-bottom: 50px;
+	background-color: #ff8800;
+	font-family: monospace;
+	color: #000;
+	padding-top:50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.craft{
+	padding: 20px 20px 20px 20px;
+}
+.cont-info{
+	padding: 20px 20px 20px 20px;
+	line-height: 0.5;
+}
+.links{
+	padding: 20px 20px 20px 20px;
+	display: flex;
+	flex-direction: column;
+
+}
+.links a{
+	color: #000;
+	text-decoration: underline;
+}
+.copyright{
+	text-align: center;
+	width: 100%;
+	padding-bottom: 50px;
+	background-color: #ff8800;
+	font-family: monospace;
+	color: #000;
+}
+.copyright a{
+	color: #fff;
+}
+
+@media screen and (min-width:520px) and (max-width:900px) {
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.cont-us{
+	
+margin: 30px 50px 30px 50px;
+	font-family: monospace;
+}
+input[type="text"]{
+	width: 40%;
+	float: left;
+}
+.cont-us label[for="text"]{
+	width: 6%;
+
+}
+.cont-us label[for="number"]{
+	width: 6%;
+
+}
+input[type="number"]{
+	width: 40%;
+	float: left;
+}
+.craft{
+	width: 30%;	
+}
+.cont-info{
+	width: 30%;
+}
+.links{
+	width: 30%;
+}
+
+}
+@media screen and (min-width: 900px){
+.dropdown-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  position: absolute;
+  right: 2px;
+  top: -5px; 
+  z-index: 1;
+}
+.cont-us{
+	
+margin: 30px 180px 30px 180px;
+	font-family: monospace;
+}
+input[type="text"]{
+	width: 40%;
+	float: left;
+}
+.cont-us label[for="text"]{
+	width: 6%;
+
+}
+.cont-us label[for="number"]{
+	width: 6%;
+
+}
+input[type="number"]{
+	width: 41%;
+	float: left;
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-left: 50px;
+}
+.craft{
+	width: 30%;	
+}
+.cont-info{
+	width: 30%;
+}
+.links{
+	width: 30%;
+}
+.dropdown-content a{
+background-color: #000;
+  color: #fff;
+}
+.dropdown .dropbtn{
+	opacity: 0;
+}
+.carousel-item{
+	width: 50%;
+}
+}
